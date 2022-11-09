@@ -1,0 +1,60 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <!-- <h2 class="text-center mb-3">City Property Management</h2> -->
+      <!-- <p class="text-center mb-3"><i class="fas fa-user-plus"></i>&nbsp;&nbsp;&nbsp;Registration</p> -->
+      <h2 class="text-center mb-3"><i class="fas fa-user-plus"></i>&nbsp;&nbsp;Registration</h2>
+        <%- include ('partials/messages') %>
+      <form action="/users/register" method="POST">
+        <div class="p-1 form-group">
+          <label for="firstName">First Name</label>
+          <input type="name" id="firstName" name="firstName"
+            class="form-control" placeholder="Enter First Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="p-1 form-group">
+          <label for="lastName">Last Name</label>
+          <input type="name" id="lastName" name="lastName"
+            class="form-control" placeholder="Enter Last Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="p-1 form-group">
+          <label for="lastName">Address</label>
+          <input type="text" id="address" name="address"
+            class="form-control" placeholder="Enter Number & Street Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="p-1 form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email"
+            class="form-control" placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+        </div>
+        <div class="p-1 form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password"
+            class="form-control" placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+        </div>
+        <div class="p-1 form-group">
+          <label for="password2">Confirm Password</label>
+          <input type="password" id="password2" name="password2"
+            class="form-control" placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+          />
+        </div>
+        <div class="p-1">
+          <button type="submit" class="btn btn-primary btn-block">
+            Register
+          </button>
+        </div>
+      </form>
+      <p class="lead mt-4">Already Have An Account?&nbsp;&nbsp;<a href="/users/login">Login Here</a></p>
+    </div>
+  </div>
+</div>

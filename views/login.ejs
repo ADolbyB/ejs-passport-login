@@ -1,0 +1,29 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <!-- <h2 class="text-center mb-3">City Property Management</h2> -->
+        <!-- <p class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Login</p> -->
+        <h2 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;Login</h2>
+        <%- include ('partials/messages') %>
+        <form action="/users/login" method="POST">
+          <div class="p-1 form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"
+              class="form-control" placeholder="Enter Email"
+            />
+          </div>
+          <div class="p-1 form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+              class="form-control" placeholder="Enter Password"
+            />
+          </div>
+          <div class="p-1">
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </div>
+        </form>
+        <p class="lead mt-4">Need An Account?&nbsp;&nbsp;<a href="/users/register">Register Here</a>
+        </p>
+      </div>
+    </div>
+</div>
