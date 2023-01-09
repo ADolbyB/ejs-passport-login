@@ -1,15 +1,15 @@
 {
-  "name": "passport-login-system",
+  "name": "ejs-passport-login",
   "version": "1.0.0",
-  "description": "Group Project for CEN 4010, Fall 2022",
+  "description": "A Node.js Passport Login System completed for project research",
   "main": "webapp.js",
   "scripts": {
     "start": "node webapp.js",
     "dev": "nodemon webapp.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Joel Brigida",
+  "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
