@@ -6,6 +6,7 @@ const session = require('express-session');
 const passport = require('passport');
 
 const webapp = express();
+mongoose.set('strictQuery', false);
 
 // Display Custom Favicon
 webapp.use(require('serve-favicon')(__dirname + '/img/favicon.ico'));

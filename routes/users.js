@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
-const { checkNotAuthenticated } = require('../config/notauth');
+const { checkNotAuthenticated } = require('../config/auth');
 
 // User Model
 const User = require('../models/User');
