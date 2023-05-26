@@ -1,0 +1,2 @@
+# Classify EJS as JavaScript
+*.ejs linguist-language=JAVASCRIPT
