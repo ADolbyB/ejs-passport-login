@@ -1,4 +1,4 @@
-# EJS Passport Login
+# NodeJS Passport Login
 
 This is a combination of 2 Node.js Passport Login tutorials as done for some project research: 
 
